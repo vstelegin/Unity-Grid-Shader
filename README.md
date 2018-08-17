@@ -1,5 +1,5 @@
 # Unity-Grid-Shader
-Customisable cubic grid
+Customizable cubic grid
 
 
 ## Usage
