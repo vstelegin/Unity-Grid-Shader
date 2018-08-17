@@ -13,8 +13,6 @@
     }
     SubShader
     {
-        //Tags { "RenderType"="Opaque" }
-        //Tags {"Queue"="AlphaTest" "IgnoreProjector"="True" "RenderType"="TransparentCutout"}
         Tags {"Queue"="Geometry-10" "RenderType"="Transparent" }
         LOD 100
         Pass {
@@ -78,7 +76,6 @@
             {
                 v2f o;
                 o.vertex = UnityObjectToClipPos(v.vertex);
-                //o.uv = TRANSFORM_TEX(v.uv, _MainTex);
                 o.worldPos = mul(unity_ObjectToWorld, v.vertex);
                 o.worldNormal = UnityObjectToWorldNormal(v.normal);
                 half l = min(1.0, max(0.0, (length(ObjSpaceViewDir(v.vertex)) - _DistanceClose) / (_DistanceFar - _DistanceClose)));
