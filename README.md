@@ -1,10 +1,10 @@
 # Unity-Grid-Shader
-Customizable cubic grid
+Customizable cubic grid, no UVs required.
 
 ![screenshot01](https://github.com/vstelegin/Unity-Grid-Shader/blob/assets/Demo.gif?raw=true)
 
 ## Usage
-Import the shader into the Unity and assign it to your material
+Import the shader into the Unity and assign it to your material.
 
 ### Compatibility
 Mobile-friendly
